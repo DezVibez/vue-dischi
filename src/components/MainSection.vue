@@ -1,5 +1,10 @@
 <template>
+
+
 <div>
+    <div id="albums" v-for="album in albums" :key="album.title">
+    {{album.title}}
+    </div>
     
 </div>
   
@@ -20,8 +25,6 @@ data(){
 created(){
     axios.get("https://flynn.boolean.careers/exercises/api/array/music")
     .then((response) => {
-        console.log(response.data)
-
         this.albums = response.data.response
     })
 }
