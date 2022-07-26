@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <h1 class="text-danger">Ciaone</h1>
+    <MainSection>
+
+    </MainSection>
   </div>
 </template>
 
 <script>
-
+import MainSection from "./components/MainSection.vue"
 
 export default {
   name: 'App',
   components: {
-    
+    MainSection
   }
 }
 </script>
