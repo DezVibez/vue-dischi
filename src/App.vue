@@ -3,6 +3,10 @@
 
     <div>
 
+      <MyHeader>
+      </MyHeader>
+
+
       <MainSection class="p-1">
 
       </MainSection>
@@ -16,11 +20,13 @@
 
 <script>
 import MainSection from "./components/MainSection.vue"
+import MyHeader from "./components/MyHeader.vue"
 
 export default {
   name: 'App',
   components: {
-    MainSection
+    MainSection,
+    MyHeader
   }
 }
 </script>

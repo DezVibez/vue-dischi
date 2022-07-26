@@ -56,6 +56,11 @@ text-align: center;
 background-color: rgb(46,58,70)
 }
 
+.album img{
+width: 80%;
+margin-top: 15px
+}
+
 .album-column{
     display: flex;
     justify-content: space-between;
