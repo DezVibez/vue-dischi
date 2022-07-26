@@ -44,12 +44,12 @@ created(){
 .album-container {
     max-width: 70%;
     margin: 0 auto;
-   flex-wrap:wrap
+    flex-wrap:wrap
 }
 
 
 .album{
-height: 400px;
+height: auto;
 width: 18%;
 margin: 10px 0;
 text-align: center;
