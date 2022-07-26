@@ -1,8 +1,16 @@
 <template>
   <div id="app">
-    <MainSection>
 
-    </MainSection>
+    <div>
+
+      <MainSection class="p-1">
+
+      </MainSection>
+
+    </div>
+
+
+    
   </div>
 </template>
 
@@ -19,4 +27,10 @@ export default {
 
 <style lang="scss">
 @import "./assets/scss/style.scss";
+
+#app{
+  background-color: rgb(30,45,59)
+}
+
+
 </style>
