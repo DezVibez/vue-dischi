@@ -2,11 +2,9 @@
 
 <div id="spotify-bar">
 
-    <select name="" id="">
-        <option v-for="option in options" :value="option.value" :key="option.title">
-        {{ option.text }}
-  </option>
-    </select>
+    <SearchBar>
+
+    </SearchBar>
 
 
 
@@ -17,12 +15,21 @@
 </template>
 
 <script>
+import SearchBar from "./SearchBar.vue"
+
 export default {
 name: "MyHeader",
+components: {
+
+    SearchBar
+},
 props: {options: Array},
 data() {
     return{
-      
+      option: {
+        value: this.options.genre,
+
+      }
      }
     },
 computed:{},

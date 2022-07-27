@@ -4,6 +4,9 @@
     <div>
 
       <MyHeader   :options="options">
+
+        
+
       </MyHeader>
 
 
@@ -19,6 +22,7 @@
 </template>
 
 <script>
+
 import MainSection from "./components/MainSection.vue"
 import MyHeader from "./components/MyHeader.vue"
 import axios from "axios"
@@ -27,7 +31,7 @@ export default {
   name: 'App',
   components: {
     MainSection,
-    MyHeader
+    MyHeader,
   },
   data(){
     return {
