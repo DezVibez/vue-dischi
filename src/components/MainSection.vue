@@ -3,7 +3,7 @@
 
 <div class="album-container">
     <div class="album-column gy-2" >
-        <div class="album" v-for="album in albums" :key="album.title">
+        <div class="album" v-for="album in albums" :key="album.title" >
             <img :src="album.poster" :alt="album.title" class="img-fluid">
             <h4 >{{album.title}}</h4>
             <h6 >{{album.author}}</h6>

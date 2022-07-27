@@ -31,17 +31,24 @@ export default {
   },
   data(){
     return {
-        albums: []
+        albums: [],
+        options: [
+
+        ]
     }
   },
   created(){
     axios.get("https://flynn.boolean.careers/exercises/api/array/music")
     .then((response) => {
         this.albums = response.data.response
+        this.options = this.albums[0]['genre']
     })
+  },
+  methods: {
+    getGenre(){}
+    }
   }
 
-}
 
 </script>
 
