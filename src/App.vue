@@ -49,7 +49,8 @@ export default {
 @import "./assets/scss/style.scss";
 
 #app{
-  background-color: rgb(30,45,59)
+  background-color: rgb(30,45,59);
+  height: 100vh;
 }
 
 
