@@ -2,7 +2,11 @@
 
 <div id="spotify-bar">
 
-    
+    <select name="" id="">
+        <option v-for="option in options" :value="option.value" :key="option.title">
+        {{ option.text }}
+  </option>
+    </select>
 
 
 
@@ -23,9 +27,8 @@ data() {
     },
 computed:{},
    
-methods: {
-     
-    },
+methods: {}
+    
     
 }
 
