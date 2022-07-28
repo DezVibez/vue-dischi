@@ -1,10 +1,12 @@
 <template>
   <div>
-    <select name="" id="" >
-      <option  disabled value="Seleziona un genere">Seleziona un genere</option>
-      <option v-for="(album, index) in albums" :key="index" :value="album.genre">
-        {{ album.genre }}
-      </option>
+    <select name="" id="" v-model="searchedGenre">
+      <option  disabled>Seleziona un genere</option>
+      <option value="rock">rock</option>
+      <option value="pop">pop</option>
+      <option value="jazz">jazz</option>
+      <option value="metal">metal</option>
+      
     </select>
   </div>
 </template>
@@ -20,7 +22,9 @@ export default {
       searchedGenre: "",
     };
   },
-  methods: {},
+  methods: {
+    
+  },
 };
 </script>
 
