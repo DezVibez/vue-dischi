@@ -2,7 +2,7 @@
 
 <div id="spotify-bar">
 
-    <SearchBar>
+    <SearchBar :albums="albums">
 
     </SearchBar>
 
@@ -20,16 +20,13 @@ import SearchBar from "./SearchBar.vue"
 export default {
 name: "MyHeader",
 components: {
-
-    SearchBar
+SearchBar
 },
-props: {options: Array},
+props: {
+    albums: Array},
 data() {
     return{
-      option: {
-        value: this.options.genre,
-
-      }
+      
      }
     },
 computed:{},

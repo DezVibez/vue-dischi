@@ -3,9 +3,7 @@
 
     <div>
 
-      <MyHeader   :options="options">
-
-        
+      <MyHeader   :albums="albums">
 
       </MyHeader>
 
@@ -36,19 +34,22 @@ export default {
   data(){
     return {
         albums: [],
-        options: [],
-        option: {},
+        
     }
   },
   created(){
     axios.get("https://flynn.boolean.careers/exercises/api/array/music")
     .then((response) => {
         this.albums = response.data.response
-        this.options = response.data.response
       })
   },
-  methods: {}
-}
+  methods: {
+  }
+  
+  
+  }
+  
+
 
 
 </script>
